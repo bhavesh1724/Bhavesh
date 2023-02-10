@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
@@ -44,8 +45,37 @@
         <div class="content">
             <h1>Web Miner</h1>
             <p>Hi, I am bhavesh founder of Web Miner E-learning platform. This platform was designed for the purpose that is student who recently choose to build their career in technical field and they are confuse What ? Where? Why? How to learn? However, this platform for both beginner or an intermediator but if majorly designed for beginner so if you are beginner and build your career in computer world then click the register button in below start learning today.</p>
-            <button class="register">Register</button>
+            <button class="register" onclick="openPopUp()">Register</button>
         </div>
+        <form action="/php/index.php" method="request" class="register-form">
+            <fieldset class="register-field">
+                <span onclick="closePopUp()"><i class="fa-sharp fa-solid fa-xmark"></i></span>
+                <legend>Registration form</legend>
+            <label for="fname">First Name  </label>
+            <input type="text" placeholder="Enter your name" name="fname" class="reg-in" required>
+            <label for="lname">Last Name  </label>
+            <input type="text" placeholder="Enter your surname" name="lname" class="reg-in" required>
+            <label for="dob">Birth Date  </label>
+            <input type="date" name="dob" class="reg-in" required>
+            <label for="gender">Gender :
+            <input type="radio" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="other">
+            <label for="other">Other</label>
+        </label>
+        <label for="contact">Contact </label>
+        <input type="phone" placeholder="Enter your phone no." name="contact" class="reg-in" required>
+        <label for="email">Email </label>
+        <input type="email" placeholder="Enter your email address" name="email" class="reg-in" required>
+        <label for="password">Password  </label>
+        <input type="password" placeholder="Enter your password" name="password" class="reg-in" required>
+        <label for="description">Description </label>
+        <textarea name="comment" placeholder="tell about yourself .." cols="30" rows="10"></textarea>
+        <input type="submit" value="submit">
+    </fieldset>    
+    </form>
     </section>
     </header>
     <hr>
@@ -59,7 +89,7 @@
             <p>The Web miner is an E-learning platform.Our website gives you lot of benefit for all the student beginner and intermediator as well. Our purpose to provide student course with all required material so student do not have to individually collect material and books from other sites and they can save that time. Also we give some offers to student for accessing course with special discount. And if student don't haven't enough money to access so they can be study course themselves manually and some course are free for all student.There are many benefit which will described in below so read the benefits of Web Miner.</p>
         </div>
     </section>
-    <section class="benefit-content">
+    <!-- <section class="benefit-content">
         <div class="content">
             <h1 style="margin-bottom:20px">What are Benefits ?</h1>
             <ul class="benefit-list">
@@ -94,7 +124,7 @@
         <div class="course-box"><img src="https://ambrapaliaidata.blob.core.windows.net/ai-storage/articles/Machin_Learning_rwzMjCK.jpg" alt=""></div>
     </div>
 </section>
-<!-- <section class="subscription">
+<section class="subscription">
     <div class="offer-box"> 
         <h1>15 days</h1>
         <span>(Free)</span>
@@ -184,9 +214,9 @@
             <li>Manual course access</li>
             <li>Community support</li>
            </ul>
-    </div>
-</section> -->
-<script src="/JS/webmin.js"></script>
+    </div> -->
+</section>
+<script src="script.js"></script>
 </body>
 </html>
 <!-- <li>Easy to access or register</li>
