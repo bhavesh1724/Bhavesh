@@ -1,0 +1,464 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:calibri,'Times New Roman', Times, serif;
+}
+body{
+    background-color: black;
+}
+/* Design header */
+header{
+    height:100vh;
+    width:100%;
+    /* background:transparent url('https://img.freepik.com/vecteurs-libre/fond-technologie-reseau-connexion-mondiale-numerique_1017-23324.jpg?size=626&ext=jpg&ga=GA1.2.684434621.1674292956') no-repeat; */
+      /* background:url('https://i.pinimg.com/originals/1f/1a/7e/1f1a7edb53db403bb89795cf33c27a0c.jpg') no-repeat; */
+      /* background:url('https://img.freepik.com/vecteurs-libre/graphique-terre-3d-symbolisant-illustration-du-commerce-mondial_456031-125.jpg?size=626&ext=jpg&ga=GA1.2.684434621.1674292956') no-repeat; */
+      background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRheeouTsFLuLqCxn-DctNMJ3JEWK8KACMkAw&usqp=CAU');
+    background-color: rgba(0, 0, 2, 0.837);
+    background-size:100% 100%;
+}
+
+/* Main of header */
+header main{
+    display: flex;
+    align-items: center;
+    width:inherit;
+    height:150px;
+    /* background-color: rgba(6, 1, 52, 0.32); */
+    /* background-color: rgba(0, 0, 0, 0.709); */
+    background-color: rgba(10, 25, 85, 0.321);
+
+
+
+    /* z-index:30; */
+}
+/* Logo design section in main*/
+header main div.logo{
+    width:20%;
+
+}
+header main div.logo h1{
+    font-size:2.7rem;
+    color:white;
+    float:right;
+    padding:0 5rem;
+    cursor:pointer;
+}
+header main div.sign-log-btn{
+    display:flex;
+    gap:15px;
+    width:15%;
+}
+div.sign-log-btn button.btn{
+    width:100px;
+    height:45px;
+    border-radius:20px;
+    background-color:transparent;
+    border-color: rgba(8, 130, 251, 0.742);
+    color:white;
+    font-size:1rem;
+    font-weight: 600;
+    transition:all 0.5s ease-in;
+    cursor:pointer;
+}
+div.sign-log-btn .btn:hover{
+    box-shadow: inset 100px 0 0 rgba(253, 83, 21, 0.792); 
+}
+
+header main div.search-bar{
+    width:40%;
+}
+div.search-bar input{
+    width:80%;
+    height:35px;
+    border:2px solid black;
+    border-radius:16px;
+    padding:0 20px;
+    font-size:1.1rem;
+}
+div.search-bar i.fas{
+    position: relative;
+    left:79%;
+}
+div.contact-info{
+    display: flex;
+    flex-direction: column;
+    height:inherit;
+    width: 24.9%;
+    justify-content: center;
+    align-items:center;
+    gap:10px;
+    /* padding:0 120px; */
+}
+div.contact-info ul{
+    list-style: none;
+    gap:10px;
+    color:white;
+}
+div.contact-info ul li{
+    display: flex;
+    gap:10px;
+    text-align: justify;
+    margin:10px 0;
+    width: 100%;
+}
+/* Navigation bar design */
+header nav{
+    height: 70px;
+    width: 100%;
+
+    background-color: rgba(10, 25, 85, 0.321);
+
+    /* background-color: rgba(2, 22, 62, 0.351); */
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap:15px;
+    align-items: center;
+    height:100%;
+    width: 100%;
+    justify-content: center;
+}
+header nav ul li a{
+    padding:10px 15px;
+    border-radius: 30px;
+    color:white;
+    text-decoration:unset;
+    width:80px;
+    font-size:1.4rem;
+    font-weight: 600;
+    position: relative;
+    /* background:transparent; */
+}
+header nav ul li a::after{
+    content:" ";
+    height: 2px;
+    width: 0%;
+    /* height: 100%;
+    width: 100%; */
+    position: absolute;
+    left:0;
+    bottom:0;
+    transition: all 0.5s ease-in;
+    /* background-color:white; */
+}
+header nav ul li a:hover::after{
+    box-shadow:inset 100px 0 0 rgba(246, 246, 249, 0.957);
+    width:100%;
+}
+/* content info design */
+section.content-box{
+    display: flex;
+    height:77%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.709);
+}
+header div.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    height: 77%;
+    width:50%;
+    padding:0 50px;
+    color:white;
+}
+div.content h1{
+    text-align: center;
+    font-size:2.8rem;
+    font-family: cursive;
+}
+div.content p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+div.content .register{
+    height:60px;
+    width: 200px;
+    background:transparent;
+    color:white;
+    font-size:1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-color:rgb(42, 2, 69);
+    border-radius:20px;
+    transition: all 0.7s ease-in-out;
+}
+button.register:hover{
+    box-shadow: inset 200px 0 0 rgba(5, 254, 146, 0.558);
+}
+div.container{
+    width:100%;
+    background:url('https://img.wallpapic.com/i6218-425-79/medium/deep-blue-purple-astronomy-wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+/* Why Webminer Section design */
+section.benefit-content{
+    display: flex;
+    /* flex-direction: row-reverse; */
+    height:400px;
+    width: 100%;
+    justify-content:center;
+    /* background: url('https://www.fg-a.com/wallpapers/2020-black-reptile-skin-th.jpg'); */
+    /* background: url('https://img.freepik.com/free-vector/speed-motion-background_23-2148965859.jpg?w=360'); */
+    /* background:url('https://wallpapersafari.com/image/dark-red-backgrounds.jpg'); */
+    /* background:url('https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-black-gold-cool-peak-matchup-background-template-image_163441.jpg'); */
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding:50px;
+    position: relative;
+}
+section.benefit-content::before{
+    content:"";
+    background-color:rgba(0, 0, 0, 0.474);
+    height:100%;
+    width: 100%;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index:1;
+    opacity:0.17;
+}
+.benefit-content div.content{
+    height: 300px;
+    width:40%;
+    /* border:1px solid white; */
+    border-radius:20px;
+    padding:0 20px;
+    /* background-color:rgba(0, 64, 255, 0.625); */
+    /* background-color: transparent; */
+    animation:moveright 5s 1s ease 1;
+    color:white;
+}
+.benefit-content div.content h1{
+    font-size:2.3rem;
+}
+.benefit-content div.content p{
+    padding:0 70px;
+}
+.benefit-list{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width:70%;
+    /* border:1px solid white; */
+    position: relative;
+    left:25%;
+    bottom:6%;
+    list-style:url('/accepted\ \(4\).png');
+    font-size:1.3rem;
+}
+.benefit-content div.webmin-image{
+    display:flex;
+    /* justify-content: start; */
+    /* padding:20px; */
+    width:40%;
+    height: 300px;
+    animation:moveleft 5s 1s ease 1;
+    animation-fill-mode:linear;
+}
+div.webmin-image img{
+    border-radius: 2px;
+    width:90%;
+}
+/* Benefits of Web miner Design */
+section.webmin-benefit{
+    display: flex;
+    height:500px;
+    width:100%;
+    color:white;
+    padding: 20px 0;
+    background:url('https://t4.ftcdn.net/jpg/04/09/70/87/360_F_409708782_HxuxOH8f7xSmj5p4ygbAbuJE74vGGj2N.jpg');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+div.webmin-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+    height: 100%;
+    width: 100%;
+}
+div.webmin-content h1{
+    font-family: cursive;
+    font-size:2.7rem;
+}
+div.webmin-content div.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:15px;
+    height:500px;
+}
+div.container div.image{
+    height:200px;
+    width:300px;
+    border:1px solid white;
+    padding:10px;
+    background-color:rgba(255, 255, 255, 0.85);
+}
+div.image img{
+    width:100%;
+    height: 100%;
+}
+
+/* What you learn from Web Miner ?*/
+section.popular-course{
+    height:700px;
+    width:100%;
+    background:url('https://i.scdn.co/image/ab67616d00001e025232fedf8a961a52c582b0b5') no-repeat;
+    background-size: cover;
+}
+section.popular-course h1{
+    color:white;
+    text-align: center;
+    font-size:2.7rem;
+    font-family:cursive;
+    padding-top:15px;
+}
+section.popular-course div.course-container{
+    display:grid;
+    grid-template-columns: 10% 10% 10% 10% 10%;
+    height:600px;
+    width: 100%;
+    column-gap:8%;
+    row-gap: 30px;
+    place-content: center;
+    padding:20px;
+}
+div.course-container div.course-box{
+    height:250px;
+    width:300px;
+    /* border:1px solid white; */
+    border-radius: 10px;
+    /* padding:20px; */
+    position: relative;
+    animation: spin 2s ease-in-out 0.4s 4 alternate-reverse forwards;
+}
+div.course-box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    /* z-index: -1; */
+}
+div.course-container div.course-box::after{
+    content:"";
+    position: absolute;
+    left:0;
+    background:linear-gradient(rgba(255, 1, 90, 0.129),rgba(3, 7, 255, 0.177));
+    border-radius:inherit;
+    background-size:cover;
+    height:100%;
+    width:100%;
+}
+div.course-container div.course-box:hover{
+    width:290px;
+    height:240px;
+    transition:all 1s ease;
+}
+
+section.subscription{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    /* grid-template-rows: 10%; */
+    gap:30px;
+    width: 100%;
+    height:100vh;
+    place-content: center;
+    place-items: center;
+}
+section.subscription div.offer-box{
+    display: flex;
+    flex-direction: column;
+    border:1px solid white;
+    height:45vh;
+    width:65%;
+    border-radius:20px;
+    padding:15px;
+    background-color: rgb(112, 186, 251);
+}
+section.subscription div.offer-box h1{
+    font-size:2.4rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    color:white;
+}
+section.subscription div.offer-box span{
+    color:white;
+    font-size:1.5rem;
+    text-align: center;
+    font-weight:950;
+
+}
+div#gold-box{
+    background: linear-gradient(
+        #462523 0,
+               #cb9b51 22%, 
+        #f6e27a 45%,
+        #f6f2c0 50%,
+        #f6e27a 55%,
+        #cb9b51 78%,
+        #462523 100%
+        ) !important;
+        background-size: cover;
+        /* height: inherit;
+        width: inherit;*/
+}
+section.subscription div.offer-box span.gold{
+    background-image: linear-gradient(
+        to right,
+        #462523 0,
+               #cb9b51 22%, 
+        #f6e27a 45%,
+        #f6f2c0 50%,
+        #f6e27a 55%,
+        #cb9b51 78%,
+        #462523 100%
+        );
+        color:black;
+        font-weight:950;
+        font-size:2.3rem;
+}
+@keyframes moveleft {
+    0%{
+        position: absolute;
+        left:0;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        left : 500px;
+    }
+}
+@keyframes moveright {
+    0%{
+        position:absolute;
+        right:0;
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+        right : 500px;
+    }
+}
+@keyframes spin {
+      from{
+          transform: rotate(359deg);
+          /* transform: rotateX(0deg); */
+          opacity:0;
+        }
+    to{
+        transform: rotate(0deg);
+        /* transform: rotateX(359deg); */
+        opacity: 1;
+      }
+}
